@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,141 +20,134 @@
   <!-- Background Brand Text -->
   <div class="background-brand-text">gik&#299;t&#233;k</div>
 
-  <!-- Floating Pill Navigation -->
+  <!-- Glassmorphism Navigation -->
   <nav class="navbar">
-    <div class="nav-container"
-      style="max-width: var(--container-max); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 100%; padding: 0 var(--space-3);">
-      <a href="/" class="logo" style="display: flex; flex-direction: column;">
-        <span class="logo-main">gik<span class="logo-accent">&#299;</span>t&#233;k</span>
-        <span class="logo-sub"
-          style="color: var(--color-accent); font-weight: 600; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2px;">An
-          Akashaja Group Company</span>
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <span class="logo-main">gik<span class="logo-accent">ī</span>ték</span>
+        <span class="logo-sub">An Akashaja Group Company</span>
       </a>
 
-      <ul class="nav-links" style="display: flex; gap: var(--space-4); list-style: none;">
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <ul class="nav-links">
         <li class="nav-item">
-          <a href="/solutions.html" class="nav-link">Solutions</a>
-          <!-- Mega Menu for Solutions -->
-          <div class="mega-menu">
-            <div class="mega-menu-container">
-              <div class="mega-col">
-                <div class="mega-col-title">Categories</div>
-                <ul class="mega-list">
-                  <li class="mega-list-item"><a href="/solutions.html#erp" class="mega-link">ERP Systems</a></li>
-                  <li class="mega-list-item"><a href="/solutions.html#ai" class="mega-link">AI & Automation</a></li>
-                  <li class="mega-list-item"><a href="/solutions.html#cloud" class="mega-link">Cloud Infrastructure</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="mega-col">
-                <div class="mega-col-title">Featured Capability</div>
-                <div class="mega-featured-card">
-                  <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: var(--space-2);">??</div>
-                  <h4 style="color: var(--color-text-header); margin-bottom: var(--space-1);">Enterprise Integration
-                  </h4>
-                  <p style="font-size: 14px; color: var(--color-text-body); margin-bottom: var(--space-2);">Connecting
-                    legacy systems with modern cloud architecture through governance-first middleware.</p>
-                  <a href="/solutions.html#integration"
-                    style="color: var(--color-accent); font-weight: 600; font-size: 14px;">Explore ?</a>
-                </div>
-              </div>
-              <div class="mega-col">
-                <div class="mega-col-title">Resources</div>
-                <div style="background: var(--color-muted); padding: var(--space-3); border-radius: var(--radius-xl);">
-                  <p style="font-size: 14px; color: var(--color-text-body); margin-bottom: var(--space-2);">
-                    �Governance-first delivery model leads to 40% reduction in long-term technical debt.�</p>
-                  <a href="/engineering.html" class="btn-nav" style="padding: 10px 16px; font-size: 12px;">View
-                    Architecture</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <a href="/" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
           <a href="/products.html" class="nav-link">Products</a>
-          <div class="mega-menu">
+          <div class="mega-menu glass-card">
             <div class="mega-menu-container">
               <div class="mega-col">
                 <div class="mega-col-title">Core Platforms</div>
                 <ul class="mega-list">
-                  <li class="mega-list-item"><a href="/products.html#erp" class="mega-link">Oracle/SAP Modules</a></li>
-                  <li class="mega-list-item"><a href="/products.html#crm" class="mega-link">Salesforce Solutions</a>
-                  </li>
-                  <li class="mega-list-item"><a href="/products.html#hcm" class="mega-link">HR & Capital Management</a>
-                  </li>
+                  <li class="mega-list-item"><a href="/products.html#erp" class="mega-link">Enterprise ERP</a></li>
+                  <li class="mega-list-item"><a href="/products.html#crm" class="mega-link">Next-Gen CRM</a></li>
+                  <li class="mega-list-item"><a href="/products.html#hcm" class="mega-link">HCM Systems</a></li>
                 </ul>
               </div>
               <div class="mega-col">
-                <div class="mega-col-title">Product Showcase</div>
-                <div class="mega-featured-card">
-                  <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: var(--space-2);">??</div>
-                  <h4 style="color: var(--color-text-header); margin-bottom: var(--space-1);">Custom ERP Modules</h4>
-                  <p style="font-size: 14px; color: var(--color-text-body); margin-bottom: var(--space-2);">Tailored
-                    business logic that sits on top of standard platforms without breaking upgrade safety.</p>
-                </div>
+                <div class="mega-col-title">Specialized Tools</div>
+                <ul class="mega-list">
+                  <li class="mega-list-item"><a href="/products.html#pos" class="mega-link">POS Software</a></li>
+                  <li class="mega-list-item"><a href="/products.html#fintech" class="mega-link">FinTech Apps</a></li>
+                  <li class="mega-list-item"><a href="/products.html#ai" class="mega-link">AI Assistant</a></li>
+                </ul>
               </div>
               <div class="mega-col">
-                <div class="mega-col-title">Support</div>
-                <p style="font-size: 14px; color: var(--color-text-body);">24/7 Managed services and platform support
-                  for global operations.</p>
+                <div class="mega-featured-card glass-card">
+                  <h4 class="gradient-text">Featured Product</h4>
+                  <p>AI-Driven Inventory Intelligence for Global Supply Chains.</p>
+                  <a href="/products.html#inventory" class="mega-link">Learn More</a>
+                </div>
               </div>
             </div>
           </div>
         </li>
-        <li class="nav-item"><a href="/engineering.html" class="nav-link">Engineering</a></li>
-        <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+        <li class="nav-item">
+          <a href="/solutions.html" class="nav-link">Solutions</a>
+          <div class="mega-menu glass-card">
+            <div class="mega-menu-container">
+              <div class="mega-col">
+                <div class="mega-col-title">Engineering</div>
+                <ul class="mega-list">
+                  <li class="mega-list-item"><a href="/solutions.html#cloud" class="mega-link">Cloud Architecture</a>
+                  </li>
+                  <li class="mega-list-item"><a href="/solutions.html#devops" class="mega-link">DevOps Automation</a>
+                  </li>
+                  <li class="mega-list-item"><a href="/solutions.html#security" class="mega-link">Cybersecurity</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Consulting</div>
+                <ul class="mega-list">
+                  <li class="mega-list-item"><a href="/solutions.html#transformation" class="mega-link">Digital
+                      Transformation</a></li>
+                  <li class="mega-list-item"><a href="/solutions.html#ai-strategy" class="mega-link">AI Governance</a>
+                  </li>
+                  <li class="mega-list-item"><a href="/solutions.html#integration" class="mega-link">Systems
+                      Integration</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <div class="mega-featured-card glass-card">
+                  <h4 class="gradient-text">Cloud Excellence</h4>
+                  <p>99.9% Uptime guaranteed through regional redundancy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="/industries.html" class="nav-link">Industries</a></li>
+        <li class="nav-item"><a href="/company.html" class="nav-link">Company</a></li>
+        <li class="nav-item"><a href="/resources.html" class="nav-link">Resources</a></li>
       </ul>
 
-      <button class="mobile-nav-toggle" id="mobileNavToggle">?</button>
-
-      <a href="/contact.html" class="btn-nav"
-        style="padding: 0.75rem 1.5rem; background: var(--color-accent); border-radius: var(--radius-xl); color: var(--color-white); font-weight: 600; text-decoration: none; transition: var(--duration-fast);">Talk
-        to us</a>
+      <div class="nav-actions">
+        <a href="/contact.html" class="btn-primary">Talk to an Expert</a>
+      </div>
     </div>
   </nav>
 
-  <!-- WRAPPER FOR FOOTER REVEAL -->
-  <div class="main-content">
-
-    <div class="hero-spacer"></div>
-
+  <main class="main-content">
     <!-- Hero Section -->
-    <section class="hero-section"
-      style="height: 80vh; min-height: 700px; display: flex; align-items: center; overflow: hidden; background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent 40%), var(--color-canvas);">
-      <div class="dot-grid-overlay"
-        style="position: absolute; inset: 0; background-image: radial-gradient(var(--color-border) 1px, transparent 1px); background-size: 32px 32px; opacity: 0.1;">
-      </div>
+    <section class="hero-section dot-grid">
+      <div class="container">
+        <div class="hero-text-content reveal-up">
 
-      <div class="container"
-        style="max-width: var(--container-max); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: center; z-index: 2;">
-        <div class="hero-text-content">
-          <span class="hero-label"
-            style="display: inline-block; padding: 4px 12px; background: var(--color-accent-soft); color: var(--color-accent); border-radius: 999px; font-size: 12px; font-weight: 600; text-transform: uppercase; margin-bottom: var(--space-3);">Enterprise
-            Technology Systems</span>
-          <h1 class="fluid-h1" style="max-width: 15ch; line-height: 1.1; margin-bottom: var(--space-3);">Engineering
-            Stability for <br><span id="typewriter" style="color: var(--color-accent);">Global Industry</span></h1>
-          <p class="fluid-p" style="max-width: 45ch; margin-bottom: var(--space-4);">We build high-availability
-            infrastructure, ERP integrations, and AI-driven automation for enterprises that require absolute operational
-            certainty.</p>
-          <div class="hero-actions" style="display: flex; gap: var(--space-2); align-items: center;">
-            <a href="/solutions.html" class="btn-primary"
-              style="background: var(--color-yellow); color: var(--color-canvas); border: none;">View Solutions</a>
-            <a href="/engineering.html"
-              style="color: var(--color-text-header); text-decoration: none; font-weight: 600; font-size: 16px; border-bottom: 2px solid var(--color-yellow);">How
-              we work ?</a>
+          <p class="fluid-p" style="max-width: 600px;">
+            We engineer the digital infrastructure of tomorrow for industry leaders today.
+            Blending high-performance architecture with rigorous security protocols to solve your most complex
+            operational challenges.
+          </p>
+          <div
+            style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); margin-bottom: 2rem; justify-content: center;">
+            <a href="/contact.html" class="btn-primary" style="flex: 1 1 200px;">Initiate Project</a>
+            <a href="/solutions.html" class="btn-primary" style="flex: 1 1 200px;">
+              Explore Capabilities
+            </a>
+            <a href="/company.html" class="btn-primary" style="flex: 1 1 200px;">
+              The gikitek Standard
+            </a>
           </div>
         </div>
-
-        <div class="hero-visual" style="position: relative;">
-          <!-- Architecture SVG Placeholder / Visual -->
-          <div
-            style="aspect-ratio: 4/3; background: rgba(148, 163, 184, 0.05); border: 1px solid var(--color-border); border-radius: var(--radius-2xl); position: relative; overflow: hidden;">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&v=HERO"
-              alt="Enterprise Architecture" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
-            <!-- Subtle Overlay Patterns -->
-            <div
-              style="position: absolute; inset: 0; background: linear-gradient(45deg, var(--color-canvas), transparent);">
-            </div>
+        <div style="display: flex; justify-content: center; align-items: center; margin-bottom: var(--space-8);"
+          class="reveal-up">
+          <div style="text-align: center;">
+            <!-- <h2 class="section-title">The gikitek Standard</h2> -->
+            <p class="section-subtitle" style="text-align: center; max-width: 700px; margin: 0 auto;">Our proprietary
+              delivery framework ensures 100% transparency and architectural
+              integrity from day zero.</p>
+          </div>
+        </div>
+        <div class="hero-visual reveal-up" style="margin: 48px auto 0; max-width: 900px; width: 100%;">
+          <div class="glass-card" style="padding: var(--space-1); overflow: hidden; display:flex; justify-content:center;">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072"
+              alt="Enterprise Architecture" class="parallax-bg"
+              style="width: 100%; border-radius: var(--radius-lg); opacity: 0.9; display:block;">
           </div>
         </div>
       </div>
@@ -193,7 +186,7 @@
             <p class="fluid-p" style="text-align: left; margin-left: 0;">
               Unlike short-term digital projects, gikitek is structured as an enterprise architecture company
               frominception.
-              We prioritize process governance and security controls by design�ensuring that every system we build is
+              We prioritize process governance and security controls by designensuring that every system we build is
               ready for the next decade of growth.
             </p>
             <ul class="numbered-list" style="margin-top: 4rem;">
@@ -220,429 +213,392 @@
       </div>
     </section>
 
-    <!-- What We Are Built to Deliver -->
+    <!-- Company Metrics Section -->
+    <section class="stats-section section-bg-surface"
+      style="padding: var(--space-12) 0; border-bottom: 1px solid var(--color-border-light);">
+      <div class="container">
+        <div class="stats-grid"
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); text-align: center;">
+          <div class="stat-item reveal-up">
+            <div class="stat-counter gradient-text" data-target="99.9" data-suffix="%"
+              style="font-family: var(--font-display); font-size: 3.5rem; font-weight: 700;">0%</div>
+            <div class="stat-label"
+              style="font-size: 12px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem;">
+              Platform Uptime</div>
+          </div>
+          <div class="stat-item reveal-up" style="transition-delay: 0.1s;">
+            <div class="stat-counter gradient-text" data-target="50" data-suffix="+"
+              style="font-family: var(--font-display); font-size: 3.5rem; font-weight: 700;">0+</div>
+            <div class="stat-label"
+              style="font-size: 12px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem;">
+              Enterprise Deployments</div>
+          </div>
+          <div class="stat-item reveal-up" style="transition-delay: 0.2s;">
+            <div class="stat-counter gradient-text" data-target="10" data-suffix="+"
+              style="font-family: var(--font-display); font-size: 3.5rem; font-weight: 700;">0+</div>
+            <div class="stat-label"
+              style="font-size: 12px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem;">
+              Industries Served</div>
+          </div>
+          <div class="stat-item reveal-up" style="transition-delay: 0.3s;">
+            <div class="stat-counter gradient-text" data-target="24" data-suffix="/7"
+              style="font-family: var(--font-display); font-size: 3.5rem; font-weight: 700;">0/7</div>
+            <div class="stat-label"
+              style="font-size: 12px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem;">
+              Managed Infrastructure</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Overview -->
+    <section class="section-padding" style="background: var(--color-canvas);">
+      <div class="container">
+        <div class="section-header reveal-up" style="margin-bottom: var(--space-8);">
+          <div class="section-subtitle gradient-text"
+            style="font-family: var(--font-mono); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: var(--space-2);">
+            STRATEGIC SOLUTIONS</div>
+          <h2 class="section-title">Built for Long-Term Operations</h2>
+        </div>
+
+        <div class="services-grid"
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-4);">
+          <!-- Card 1 -->
+          <div class="glass-card reveal-up" style="padding: var(--space-4);">
+            <div style="color: var(--color-accent); margin-bottom: var(--space-2);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v8" />
+                <path d="m4.93 4.93 1.41 1.41" />
+                <path d="M2 12h8" />
+                <path d="m4.93 19.07 1.41-1.41" />
+                <path d="M12 22v-8" />
+                <path d="m19.07 19.07-1.41-1.41" />
+                <path d="M22 12h-8" />
+                <path d="m19.07 4.93-1.41 1.41" />
+                <path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
+              </svg>
+            </div>
+            <h3 style="margin-bottom: var(--space-2);">Enterprise AI</h3>
+            <p style="font-size: 15px; margin-bottom: var(--space-4);">Custom LLM implementations and predictive
+              analytics with strict data governance.</p>
+            <a href="/solutions.html#ai" class="mega-link">Explore Capabilities →</a>
+          </div>
+          <!-- Card 2 -->
+          <div class="glass-card reveal-up" style="padding: var(--space-4); transition-delay: 0.1s;">
+            <div style="color: var(--color-accent); margin-bottom: var(--space-2);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M17.5 19c.4 0 .7-.1 1-.3 1.3-.7 1.5-2.6.4-3.7l-1-1c-1.1-1.1-3-1.1-4.1 0L12 15h.1c.4 0 .8.1 1.1.2.7.3 1.3.8 1.8 1.4.5.6.8 1.3 1 2.1l.1.3h1.4Z" />
+                <path d="M12 5V3" />
+                <path d="M5 12H3" />
+                <path d="M12 21v-2" />
+                <path d="M21 12h-2" />
+                <path d="m5.5 5.5 1.5 1.5" />
+                <path d="m18.5 18.5-1.5-1.5" />
+                <path d="m5.5 18.5 1.5-1.5" />
+                <path d="m18.5 5.5-1.5-1.5" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <h3 style="margin-bottom: var(--space-2);">Cloud Architecture</h3>
+            <p style="font-size: 15px; margin-bottom: var(--space-4);">High-availability multi-cloud strategies designed
+              for regulatory compliance.</p>
+            <a href="/solutions.html#cloud" class="mega-link">Explore Capabilities →</a>
+          </div>
+          <!-- Card 3 -->
+          <div class="glass-card reveal-up" style="padding: var(--space-4); transition-delay: 0.2s;">
+            <div style="color: var(--color-accent); margin-bottom: var(--space-2);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18" />
+                <path d="M7 16l3-4 3 2 4-6" />
+              </svg>
+            </div>
+            <h3 style="margin-bottom: var(--space-2);">ERP Modernization</h3>
+            <p style="font-size: 15px; margin-bottom: var(--space-4);">Strategic overhaul of legacy Oracle/SAP systems
+              to cloud-native platforms.</p>
+            <a href="/solutions.html#erp" class="mega-link">Explore Capabilities →</a>
+          </div>
+          <!-- Card 4 -->
+          <div class="glass-card reveal-up" style="padding: var(--space-4); transition-delay: 0.3s;">
+            <div style="color: var(--color-accent); margin-bottom: var(--space-2);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 12h18" />
+                <path d="M3 6h18" />
+                <path d="M3 18h18" />
+              </svg>
+            </div>
+            <h3 style="margin-bottom: var(--space-2);">Digital Transformation</h3>
+            <p style="font-size: 15px; margin-bottom: var(--space-4);">End-to-end transformation roadmap from
+              architecture to managed operations.</p>
+            <a href="/solutions.html#transformation" class="mega-link">Explore Capabilities →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enterprise Philosophy -->
     <section class="section-padding">
       <div class="container">
-        <!-- Stats Band (Luxoft Spec) -->
-        <section class="stats-section"
-          style="background: var(--color-surface); padding: var(--space-8) 0; border-bottom: 1px solid var(--color-border);">
-          <div class="container" style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-3);">
-            <div class="stats-grid"
-              style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); text-align: center;">
-              <div class="stat-item"
-                style="padding: var(--space-4); background: rgba(148, 163, 184, 0.05); border-radius: var(--radius-xl);">
-                <div class="stat-number"
-                  style="font-family: var(--font-display); font-size: 48px; font-weight: 700; color: var(--color-text-header); margin-bottom: var(--space-1);">
-                  15+</div>
-                <div class="stat-label"
-                  style="font-size: 14px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em;">
-                  Conglomerates Served</div>
+        <div class="section-header reveal-up">
+          <h2 class="section-title">Core Engineering Capabilities</h2>
+          <p class="section-subtitle">Decades of collective experience distilled into four distinct centers of
+            excellence. We don't just write code; we architect systems that drive commercial resilience.</p>
+        </div>
+      </div>
+
+      <!-- Industries Strip (Luxoft Spec) -->
+      <section class="section-padding"
+        style="padding: var(--space-12) 0; background: var(--color-surface); border-top: 1px solid var(--color-border);">
+        <div class="container" style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-3);">
+          <div class="section-header" style="text-align: left; margin-bottom: var(--space-8);">
+            <div class="section-subtitle"
+              style="color: var(--color-accent); font-family: var(--font-mono); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: var(--space-2);">
+              VERTICAL EXPERTISE</div>
+            <h2 class="section-title">Industry-Specific Engineering</h2>
+          </div>
+
+          <div class="industry-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-4);">
+            <!-- Industry 1 -->
+            <div class="industry-card"
+              style="position: relative; aspect-ratio: 16/10; border-radius: var(--radius-2xl); overflow: hidden; cursor: pointer; transition: all var(--duration-base) var(--ease-enterprise);">
+              <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=2070&auto=format&fit=crop"
+                alt="Manufacturing"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--duration-base);">
+              <div class="industry-overlay"
+                style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(2, 6, 23, 0.9), transparent); display: flex; align-items: flex-end; padding: var(--space-3);">
+                <h3 style="color: var(--color-white); font-size: 1.25rem;">Manufacturing & Industry 4.0</h3>
               </div>
-              <div class="stat-item"
-                style="padding: var(--space-4); background: rgba(148, 163, 184, 0.05); border-radius: var(--radius-xl);">
-                <div class="stat-number"
-                  style="font-family: var(--font-display); font-size: 48px; font-weight: 700; color: var(--color-text-header); margin-bottom: var(--space-1);">
-                  40%</div>
-                <div class="stat-label"
-                  style="font-size: 14px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em;">
-                  Efficiency Gain</div>
+            </div>
+            <!-- Industry 2 -->
+            <div class="industry-card"
+              style="position: relative; aspect-ratio: 16/10; border-radius: var(--radius-2xl); overflow: hidden; cursor: pointer; transition: all var(--duration-base) var(--ease-enterprise);">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2072&auto=format&fit=crop"
+                alt="Financial Services"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--duration-base);">
+              <div class="industry-overlay"
+                style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(2, 6, 23, 0.9), transparent); display: flex; align-items: flex-end; padding: var(--space-3);">
+                <h3 style="color: var(--color-white); font-size: 1.25rem;">Banking & Financial Services</h3>
               </div>
-              <div class="stat-item"
-                style="padding: var(--space-4); background: rgba(148, 163, 184, 0.05); border-radius: var(--radius-xl);">
-                <div class="stat-number"
-                  style="font-family: var(--font-display); font-size: 48px; font-weight: 700; color: var(--color-text-header); margin-bottom: var(--space-1);">
-                  99.9%</div>
-                <div class="stat-label"
-                  style="font-size: 14px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em;">
-                  System Uptime</div>
-              </div>
-              <div class="stat-item"
-                style="padding: var(--space-4); background: rgba(148, 163, 184, 0.05); border-radius: var(--radius-xl);">
-                <div class="stat-number"
-                  style="font-family: var(--font-display); font-size: 48px; font-weight: 700; color: var(--color-text-header); margin-bottom: var(--space-1);">
-                  24/7</div>
-                <div class="stat-label"
-                  style="font-size: 14px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em;">
-                  Managed Support</div>
+            </div>
+            <!-- Industry 3 -->
+            <div class="industry-card"
+              style="position: relative; aspect-ratio: 16/10; border-radius: var(--radius-2xl); overflow: hidden; cursor: pointer; transition: all var(--duration-base) var(--ease-enterprise);">
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
+                alt="FMCG & Supply Chain"
+                style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--duration-base);">
+              <div class="industry-overlay"
+                style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(2, 6, 23, 0.9), transparent); display: flex; align-items: flex-end; padding: var(--space-3);">
+                <h3 style="color: var(--color-white); font-size: 1.25rem;">FMCG & Logistics</h3>
               </div>
             </div>
           </div>
-        </section>
 
-        <!-- Capability Grid (Luxoft Spec) -->
-        <section class="section-padding" style="padding: var(--space-12) 0; background: var(--color-canvas);">
-          <div class="container" style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-3);">
-            <div class="section-header" style="text-align: left; margin-bottom: var(--space-8);">
+          <!-- Product Showcase (same box) -->
+          <div style="margin-top: var(--space-12); padding-top: var(--space-8);">
+            <div class="section-header reveal-up" style="text-align: left; margin-bottom: var(--space-8);">
               <div class="section-subtitle"
                 style="color: var(--color-accent); font-family: var(--font-mono); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: var(--space-2);">
-                OUR CAPABILITIES</div>
-              <h2 class="section-title" style="max-width: 20ch; font-size: clamp(2rem, 4vw, 3rem);">Governance-First
-                Technical Architecture</h2>
+                PRODUCT SHOWCASE</div>
+              <h2 class="section-title">Enterprise-Grade Platforms</h2>
             </div>
 
-            <div class="services-grid"
-              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-4);">
-              <!-- Card 1 -->
-              <div class="service-card"
-                style="display: flex; flex-direction: column; background: var(--color-surface); padding: var(--space-4); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); transition: all var(--duration-base) var(--ease-enterprise);">
-                <div class="service-icon" style="margin-bottom: var(--space-3); color: var(--color-accent);">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3 3v18h18" />
-                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3" />
-                  </svg>
+            <div class="product-showcase-grid">
+              <!-- ERP -->
+              <div class="glass-card reveal-up">
+                <div style="aspect-ratio: 16/9; overflow: hidden;">
+                  <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200" alt="ERP System"
+                    style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85;">
                 </div>
-                <h3 style="color: var(--color-text-header); margin-bottom: var(--space-2);">ERP Modernization</h3>
-                <p style="color: var(--color-text-body); font-size: 15px; margin-bottom: var(--space-4); flex-grow: 1;">
-                  Strategic overhaul of legacy Oracle and SAP systems to cloud-native, scalable architectures.</p>
-                <a href="/solutions.html#erp"
-                  style="color: var(--color-accent); font-weight: 600; text-decoration: none; font-size: 14px;">Explore
-                  ?</a>
+                <div style="padding: var(--space-6); text-align: center;">
+                  <h3 style="margin-bottom: var(--space-2); font-size: 1.5rem;">Enterprise ERP</h3>
+                  <p style="font-size: 15px; margin-bottom: var(--space-4); color: var(--color-text-body);">Unified
+                    business logic that scales with global operations without upgrade debt.</p>
+                  <a href="/products.html#erp" class="mega-link" style="font-size: 1rem;">View Platform →</a>
+                </div>
               </div>
-              <!-- Card 2 -->
-              <div class="service-card"
-                style="display: flex; flex-direction: column; background: var(--color-surface); padding: var(--space-4); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); transition: all var(--duration-base) var(--ease-enterprise);">
-                <div class="service-icon" style="margin-bottom: var(--space-3); color: var(--color-accent);">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2a10 10 0 1 0 10 10 10 10 0 0 0-10-10z" />
-                    <path d="M8.5 8.5v7" />
-                    <path d="M15.5 8.5v7" />
-                    <path d="M12 10.5v5" />
-                  </svg>
+              <!-- CRM -->
+              <div class="glass-card reveal-up" style="transition-delay: 0.1s;">
+                <div style="aspect-ratio: 16/9; overflow: hidden;">
+                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200" alt="CRM Platform"
+                    style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85;">
                 </div>
-                <h3 style="color: var(--color-text-header); margin-bottom: var(--space-2);">Enterprise AI</h3>
-                <p style="color: var(--color-text-body); font-size: 15px; margin-bottom: var(--space-4); flex-grow: 1;">
-                  Implementation of LLMs and predictive analytics with strict data governance and compliance.</p>
-                <a href="/solutions.html#ai"
-                  style="color: var(--color-accent); font-weight: 600; text-decoration: none; font-size: 14px;">Explore
-                  ?</a>
+                <div style="padding: var(--space-6); text-align: center;">
+                  <h3 style="margin-bottom: var(--space-2); font-size: 1.5rem;">Next-Gen CRM</h3>
+                  <p style="font-size: 15px; margin-bottom: var(--space-4); color: var(--color-text-body);">
+                    High-conversion sales platforms with AI-driven lead scoring and pipeline analytics.</p>
+                  <a href="/products.html#crm" class="mega-link" style="font-size: 1rem;">View Platform →</a>
+                </div>
               </div>
-              <!-- Card 3 -->
-              <div class="service-card"
-                style="display: flex; flex-direction: column; background: var(--color-surface); padding: var(--space-4); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); transition: all var(--duration-base) var(--ease-enterprise);">
-                <div class="service-icon" style="margin-bottom: var(--space-3); color: var(--color-accent);">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M17.5 19c0-1.7-1.3-3-3-3h-11c-1.7 0-3 1.3-3 3" />
-                    <path d="M17.5 19a9 9 0 0 0-9-9 9 9 0 0 0-9 9" />
-                    <path d="M17.5 12a5 5 0 0 1 5 5" />
-                    <path d="M12 2v6" />
-                    <path d="M12 2a5 5 0 0 1 5 5" />
-                    <path d="M12 2a5 5 0 0 0-5 5" />
-                  </svg>
+              <!-- AI Dashboard -->
+              <div class="glass-card reveal-up" style="transition-delay: 0.2s;">
+                <div style="aspect-ratio: 16/9; overflow: hidden;">
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200" alt="AI Dashboard"
+                    style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85;">
                 </div>
-                <h3 style="color: var(--color-text-header); margin-bottom: var(--space-2);">Cloud Architecture</h3>
-                <p style="color: var(--color-text-body); font-size: 15px; margin-bottom: var(--space-4); flex-grow: 1;">
-                  High-availability multi-cloud strategies designed for regulatory compliance and disaster recovery.</p>
-                <a href="/solutions.html#cloud"
-                  style="color: var(--color-accent); font-weight: 600; text-decoration: none; font-size: 14px;">Explore
-                  ?</a>
-              </div>
-              <!-- Card 4 -->
-              <div class="service-card"
-                style="display: flex; flex-direction: column; background: var(--color-surface); padding: var(--space-4); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); transition: all var(--duration-base) var(--ease-enterprise);">
-                <div class="service-icon" style="margin-bottom: var(--space-3); color: var(--color-accent);">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M8 12h8" />
-                    <path d="M12 8v8" />
-                  </svg>
+                <div style="padding: var(--space-6); text-align: center;">
+                  <h3 style="margin-bottom: var(--space-2); font-size: 1.5rem;">AI Dashboard</h3>
+                  <p style="font-size: 15px; margin-bottom: var(--space-4); color: var(--color-text-body);">Real-time
+                    decision support systems with integrated data visualization and reporting.</p>
+                  <a href="/products.html#dashboards" class="mega-link" style="font-size: 1rem;">View Platform →</a>
                 </div>
-                <h3 style="color: var(--color-text-header); margin-bottom: var(--space-2);">Systems Integration</h3>
-                <p style="color: var(--color-text-body); font-size: 15px; margin-bottom: var(--space-4); flex-grow: 1;">
-                  Orchestrating complex data flows between heterogeneous systems with zero operational disruption.</p>
-                <a href="/solutions.html#integration"
-                  style="color: var(--color-accent); font-weight: 600; text-decoration: none; font-size: 14px;">Explore
-                  ?</a>
-              </div>
-              <!-- Card 5 -->
-              <div class="service-card"
-                style="display: flex; flex-direction: column; background: var(--color-surface); padding: var(--space-4); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); transition: all var(--duration-base) var(--ease-enterprise);">
-                <div class="service-icon" style="margin-bottom: var(--space-3); color: var(--color-accent);">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  </svg>
-                </div>
-                <h3 style="color: var(--color-text-header); margin-bottom: var(--space-2);">Cybersecurity</h3>
-                <p style="color: var(--color-text-body); font-size: 15px; margin-bottom: var(--space-4); flex-grow: 1;">
-                  Hardened infrastructure design with automated compliance monitoring and threat detection.</p>
-                <a href="/solutions.html#security"
-                  style="color: var(--color-accent); font-weight: 600; text-decoration: none; font-size: 14px;">Explore
-                  ?</a>
-              </div>
-              <!-- Card 6 -->
-              <div class="service-card"
-                style="display: flex; flex-direction: column; background: var(--color-surface); padding: var(--space-4); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); transition: all var(--duration-base) var(--ease-enterprise);">
-                <div class="service-icon" style="margin-bottom: var(--space-3); color: var(--color-accent);">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="3" />
-                    <path
-                      d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
-                  </svg>
-                </div>
-                <h3 style="color: var(--color-text-header); margin-bottom: var(--space-2);">Managed Operations</h3>
-                <p style="color: var(--color-text-body); font-size: 15px; margin-bottom: var(--space-4); flex-grow: 1;">
-                  Providing 24/7 technical operations and platform maintenance for mission-critical systems.</p>
-                <a href="/solutions.html#managed"
-                  style="color: var(--color-accent); font-weight: 600; text-decoration: none; font-size: 14px;">Explore
-                  ?</a>
               </div>
             </div>
           </div>
-        </section>
 
-        <!-- Enterprise Philosophy -->
-        <section class="section-padding">
-          <div class="container">
-            <div class="section-header">
-              <div class="section-subtitle">ENTERPRISE PHILOSOPHY</div>
-              <h2 class="section-title">Governed By Discipline</h2>
-              <p class="section-description">
-                Our approach to enterprise technology is defined by structural discipline, strategic foresight, and
-                operational stability.
-              </p>
+          <!-- Industries (same box) -->
+          <div style="margin-top: var(--space-12); padding-top: var(--space-8);">
+            <div class="section-header reveal-up" style="text-align: left; margin-bottom: var(--space-8);">
+              <div class="section-subtitle"
+                style="color: var(--color-accent); font-family: var(--font-mono); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: var(--space-2);">
+                VERTICAL EXPERTISE</div>
+              <h2 class="section-title">Industry-Specific Engineering</h2>
             </div>
 
-            <!-- Industries Strip (Luxoft Spec) -->
-            <section class="section-padding"
-              style="padding: var(--space-12) 0; background: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
-              <div class="container"
-                style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-3);">
-                <div class="section-header" style="text-align: left; margin-bottom: var(--space-8);">
-                  <div class="section-subtitle"
-                    style="color: var(--color-accent); font-family: var(--font-mono); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: var(--space-2);">
-                    VERTICAL EXPERTISE</div>
-                  <h2 class="section-title">Industry-Specific Engineering</h2>
-                </div>
-
-                <div class="industry-grid"
-                  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-4);">
-                  <!-- Industry 1 -->
-                  <div class="industry-card"
-                    style="position: relative; aspect-ratio: 16/10; border-radius: var(--radius-2xl); overflow: hidden; cursor: pointer; transition: all var(--duration-base) var(--ease-enterprise);">
-                    <img
-                      src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=2070&auto=format&fit=crop"
-                      alt="Manufacturing"
-                      style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--duration-base);">
-                    <div class="industry-overlay"
-                      style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(2, 6, 23, 0.9), transparent); display: flex; align-items: flex-end; padding: var(--space-3);">
-                      <h3 style="color: var(--color-white); font-size: 1.25rem;">Manufacturing & Industry 4.0</h3>
-                    </div>
-                  </div>
-                  <!-- Industry 2 -->
-                  <div class="industry-card"
-                    style="position: relative; aspect-ratio: 16/10; border-radius: var(--radius-2xl); overflow: hidden; cursor: pointer; transition: all var(--duration-base) var(--ease-enterprise);">
-                    <img
-                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2072&auto=format&fit=crop"
-                      alt="Financial Services"
-                      style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--duration-base);">
-                    <div class="industry-overlay"
-                      style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(2, 6, 23, 0.9), transparent); display: flex; align-items: flex-end; padding: var(--space-3);">
-                      <h3 style="color: var(--color-white); font-size: 1.25rem;">Banking & Financial Services</h3>
-                    </div>
-                  </div>
-                  <!-- Industry 3 -->
-                  <div class="industry-card"
-                    style="position: relative; aspect-ratio: 16/10; border-radius: var(--radius-2xl); overflow: hidden; cursor: pointer; transition: all var(--duration-base) var(--ease-enterprise);">
-                    <img
-                      src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
-                      alt="FMCG & Supply Chain"
-                      style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--duration-base);">
-                    <div class="industry-overlay"
-                      style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(2, 6, 23, 0.9), transparent); display: flex; align-items: flex-end; padding: var(--space-3);">
-                      <h3 style="color: var(--color-white); font-size: 1.25rem;">FMCG & Logistics</h3>
-                    </div>
-                  </div>
+            <div class="industry-grid"
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-4);">
+              <!-- Industry 1 -->
+              <div class="industry-card"
+                style="position: relative; aspect-ratio: 16/10; border-radius: var(--radius-2xl); overflow: hidden; cursor: pointer; transition: all var(--duration-base) var(--ease-enterprise);">
+                <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?q=80&w=2070&auto=format&fit=crop"
+                  alt="Manufacturing"
+                  style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--duration-base);">
+                <div class="industry-overlay"
+                  style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(2, 6, 23, 0.9), transparent); display: flex; align-items: flex-end; padding: var(--space-3);">
+                  <h3 style="color: var(--color-white); font-size: 1.25rem;">Manufacturing &amp; Industry 4.0</h3>
                 </div>
               </div>
-            </section>
-
-            <!-- Engineering Process Timeline (Connected Nodes) -->
-            <section class="section-padding"
-              style="padding: var(--space-12) 0; background: var(--color-canvas); position: relative; overflow: hidden;">
-              <div class="container"
-                style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-3); position: relative;">
-                <div class="section-header" style="text-align: center; margin-bottom: var(--space-12);">
-                  <div class="section-subtitle"
-                    style="color: var(--color-accent); font-family: var(--font-mono); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: var(--space-2);">
-                    DELIVERY MODEL</div>
-                  <h2 class="section-title" style="margin: 0 auto;">Structured Delivery Methodology</h2>
-                </div>
-
-                <div class="timeline-container"
-                  style="position: relative; display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-2);">
-                  <div class="timeline-line"
-                    style="position: absolute; top: 24px; left: 0; width: 100%; height: 2px; background: var(--color-border); z-index: 1;">
-                  </div>
-
-                  <!-- Node 1 -->
-                  <div class="timeline-node" style="position: relative; z-index: 2; flex: 1; text-align: center;">
-                    <div class="node-circle"
-                      style="width: 48px; height: 48px; background: var(--color-canvas); border: 2px solid var(--color-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3); font-family: var(--font-mono); font-weight: 700; color: var(--color-accent);">
-                      01</div>
-                    <h4 style="color: var(--color-text-header); margin-bottom: var(--space-1);">Requirement Study</h4>
-                    <p style="font-size: 13px; color: var(--color-text-body); max-width: 180px; margin: 0 auto;">
-                      Analysis of user workflows and system constraints.</p>
-                  </div>
-                  <!-- Node 2 -->
-                  <div class="timeline-node" style="position: relative; z-index: 2; flex: 1; text-align: center;">
-                    <div class="node-circle"
-                      style="width: 48px; height: 48px; background: var(--color-canvas); border: 2px solid var(--color-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3); font-family: var(--font-mono); font-weight: 700; color: var(--color-text-body);">
-                      02</div>
-                    <h4 style="color: var(--color-text-header); margin-bottom: var(--space-1);">Process Mapping</h4>
-                    <p style="font-size: 13px; color: var(--color-text-body); max-width: 180px; margin: 0 auto;">
-                      Translation of processes into technical architecture.</p>
-                  </div>
-                  <!-- Node 3 -->
-                  <div class="timeline-node" style="position: relative; z-index: 2; flex: 1; text-align: center;">
-                    <div class="node-circle"
-                      style="width: 48px; height: 48px; background: var(--color-canvas); border: 2px solid var(--color-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3); font-family: var(--font-mono); font-weight: 700; color: var(--color-text-body);">
-                      03</div>
-                    <h4 style="color: var(--color-text-header); margin-bottom: var(--space-1);">Core Configuration</h4>
-                    <p style="font-size: 13px; color: var(--color-text-body); max-width: 180px; margin: 0 auto;">Native
-                      platform setup with zero-code logic where possible.</p>
-                  </div>
-                  <!-- Node 4 -->
-                  <div class="timeline-node" style="position: relative; z-index: 2; flex: 1; text-align: center;">
-                    <div class="node-circle"
-                      style="width: 48px; height: 48px; background: var(--color-canvas); border: 2px solid var(--color-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3); font-family: var(--font-mono); font-weight: 700; color: var(--color-text-body);">
-                      04</div>
-                    <h4 style="color: var(--color-text-header); margin-bottom: var(--space-1);">Validation & UAT</h4>
-                    <p style="font-size: 13px; color: var(--color-text-body); max-width: 180px; margin: 0 auto;">
-                      Rigorous testing against functional requirements.</p>
-                  </div>
-                  <!-- Node 5 -->
-                  <div class="timeline-node" style="position: relative; z-index: 2; flex: 1; text-align: center;">
-                    <div class="node-circle"
-                      style="width: 48px; height: 48px; background: var(--color-canvas); border: 2px solid var(--color-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3); font-family: var(--font-mono); font-weight: 700; color: var(--color-text-body);">
-                      05</div>
-                    <h4 style="color: var(--color-text-header); margin-bottom: var(--space-1);">Hypercare Support</h4>
-                    <p style="font-size: 13px; color: var(--color-text-body); max-width: 180px; margin: 0 auto;">Ongoing
-                      stability monitoring and optimization.</p>
-                  </div>
+              <!-- Industry 2 -->
+              <div class="industry-card"
+                style="position: relative; aspect-ratio: 16/10; border-radius: var(--radius-2xl); overflow: hidden; cursor: pointer; transition: all var(--duration-base) var(--ease-enterprise);">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2072&auto=format&fit=crop"
+                  alt="Financial Services"
+                  style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--duration-base);">
+                <div class="industry-overlay"
+                  style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(2, 6, 23, 0.9), transparent); display: flex; align-items: flex-end; padding: var(--space-3);">
+                  <h3 style="color: var(--color-white); font-size: 1.25rem;">Banking &amp; Financial Services</h3>
                 </div>
               </div>
-            </section>
-
-            <!-- How We Engage -->
-            <section class="section-padding">
-              <div class="container">
-                <div class="section-header">
-                  <div class="section-subtitle">ENGAGEMENT MODEL</div>
-                  <h2 class="section-title">How We Engage</h2>
-                  <p class="section-description">
-                    A methodical, predictable approach to enterprise system implementation.
-                  </p>
+              <!-- Industry 3 -->
+              <div class="industry-card"
+                style="position: relative; aspect-ratio: 16/10; border-radius: var(--radius-2xl); overflow: hidden; cursor: pointer; transition: all var(--duration-base) var(--ease-enterprise);">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
+                  alt="FMCG &amp; Supply Chain"
+                  style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--duration-base);">
+                <div class="industry-overlay"
+                  style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(2, 6, 23, 0.9), transparent); display: flex; align-items: flex-end; padding: var(--space-3);">
+                  <h3 style="color: var(--color-white); font-size: 1.25rem;">FMCG &amp; Logistics</h3>
                 </div>
-
-                <div class="services-grid">
-                  <div class="service-card">
-                    <div class="service-icon">1</div>
-                    <h3>Requirement Study (SRS)</h3>
-                    <p>Comprehensive analysis of business processes, user needs, and system requirements.</p>
-                  </div>
-
-                  <div class="service-card">
-                    <div class="service-icon">2</div>
-                    <h3>Process Mapping</h3>
-                    <p>AS-IS to TO-BE process transformation, identifying optimization opportunities.</p>
-                  </div>
-
-                  <div class="service-card">
-                    <div class="service-icon">3</div>
-                    <h3>Configuration</h3>
-                    <p>Platform configuration with minimal custom code, ensuring upgrade safety.</p>
-                  </div>
-
-                  <div class="service-card">
-                    <div class="service-icon">4</div>
-                    <h3>Testing & Training</h3>
-                    <p>User acceptance testing and comprehensive training programs for internal teams.</p>
-                  </div>
-
-                  <div class="service-card">
-                    <div class="service-icon">5</div>
-                    <h3>Go-Live & Support</h3>
-                    <p>Phased deployment, post-implementation support, and system optimization.</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- Ideal Engagement Profile -->
-            <section class="section-padding">
-              <div class="container">
-                <div class="section-header">
-                  <div class="section-subtitle">PARTNERSHIP</div>
-                  <h2 class="section-title">Ideal Engagement Profile</h2>
-                </div>
-
-                <div class="partnership-grid">
-                  <div class="partnership-card">
-                    <h3 style="color: var(--color-accent); margin-bottom: 1.5rem;">Strategic Fit</h3>
-                    <ul
-                      style="list-style: none; padding: 0; color: var(--color-text-body); font-size: 0.9375rem; line-height: 2;">
-                      <li>? Growing enterprises planning transformation</li>
-                      <li>? Legacy migrations to modern ERP/Cloud</li>
-                      <li>? Governance & Compliance mandates</li>
-                      <li>? Long-term infrastructure management</li>
-                    </ul>
-                  </div>
-                  <div class="partnership-card">
-                    <h3 style="color: var(--color-text-muted); margin-bottom: 1.5rem;">Scope Exclusions</h3>
-                    <ul
-                      style="list-style: none; padding: 0; color: var(--color-text-muted); font-size: 0.9375rem; line-height: 2; opacity: 0.8;">
-                      <li>? One-off website or basic app requests</li>
-                      <li>? Experimental MVPs without governance</li>
-                      <li>? Design-only creative tasks</li>
-                      <li>? Short-term tactical code-fixes</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-          </div><!-- End Main Content -->
-
-          <!-- FOOTER -->
-          <footer>
-            <div class="container">
-              <div class="footer-grid">
-                <div class="footer-col">
-                  <div class="footer-logo">
-                    <div class="footer-logo-main">gik<span class="logo-accent">&#299;</span>t&#233;k</div>
-                    <div class="footer-logo-sub">An Akashaja Group Company</div>
-                  </div>
-                  <p>Enterprise technology systems for scalable business operations. ERP, CRM, AI automation, and cloud
-                    infrastructure.</p>
-                </div>
-
-                <div class="footer-col">
-                  <h4>Corporate Headquarters</h4>
-                  <p>901, Galaxy Blue Sapphire Plaza<br>Greater Noida West<br>Uttar Pradesh 201306, India</p>
-                </div>
-
-                <div class="footer-col">
-                  <h4>Regional Office</h4>
-                  <p>H. No. 46, Near 40 Feet Road<br>Parahupur, Mughalsarai<br>Uttar Pradesh, India</p>
-                </div>
-              </div>
-              <div class="footer-bottom">
-                <p>� 2024 gikitek Private Limited. An Akashaja Group Company. All Rights Reserved.</p>
               </div>
             </div>
-          </footer>
-
-          <div class="chat-widget" id="chatWidget">&#128172;<div class="chat-tooltip">Talk to our team</div>
           </div>
 
-          <div class="back-to-top" id="backToTop">&#8593;</div>
+          <!-- Delivery Model (same box) -->
+          <div style="margin-top: var(--space-12); padding-top: var(--space-8);">
+            <div class="section-header reveal-up" style="text-align: left; margin-bottom: var(--space-8);">
+              <div class="section-subtitle gradient-text"
+                style="font-family: var(--font-mono); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: var(--space-2);">
+                DELIVERY MODEL</div>
+              <h2 class="section-title">Structured Delivery Methodology</h2>
+            </div>
 
-          <script type="module" src="/main.js"></script>
+            <div class="timeline-container"
+              style="display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-8); justify-content: center;">
+              <div class="glass-card reveal-up"
+                style="flex: 1; min-width: 250px; padding: var(--space-4); text-align: center;">
+                <div class="gradient-text"
+                  style="font-family: var(--font-mono); font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">01
+                </div>
+                <h4>Strategic Discovery</h4>
+                <p style="font-size: 13px;">Deep audit of system constraints and user outcomes.</p>
+              </div>
+              <div class="glass-card reveal-up"
+                style="flex: 1; min-width: 250px; padding: var(--space-4); text-align: center; transition-delay: 0.1s;">
+                <div class="gradient-text"
+                  style="font-family: var(--font-mono); font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">02
+                </div>
+                <h4>Architecture Design</h4>
+                <p style="font-size: 13px;">Mapping high-availability infrastructure and data flows.</p>
+              </div>
+              <div class="glass-card reveal-up"
+                style="flex: 1; min-width: 250px; padding: var(--space-4); text-align: center; transition-delay: 0.2s;">
+                <div class="gradient-text"
+                  style="font-family: var(--font-mono); font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">03
+                </div>
+                <h4>Global Deployment</h4>
+                <p style="font-size: 13px;">Phased rollout with 24/7 hypercare and monitoring.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- Final CTA -->
+      <section class="section-padding"
+        style="background: var(--color-canvas); text-align: center; border-top: 1px solid var(--color-border-light);">
+        <div class="container">
+          <div class="reveal-up">
+            <h2 class="fluid-h1" style="font-size: clamp(2rem, 5vw, 3.5rem);">Build Your Next Digital Platform
+              With Us</h2>
+            <p class="fluid-p">Join over 50 global enterprises that trust Gikitek for their mission-critical
+              infrastructure.</p>
+            <div class="hero-actions" style="justify-content: center;">
+              <a href="/contact.html" class="btn-primary">Talk to an Expert</a>
+              <a href="/solutions.html" class="btn-primary" style="margin-left: var(--space-2);">Request Proposal</a>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <div class="footer-logo-main">gik<span class="logo-accent">&#299;</span>t&#233;k</div>
+            <div class="footer-logo-sub">An Akashaja Group Company</div>
+          </div>
+          <p>Enterprise technology systems for scalable business operations. ERP, CRM, AI automation, and cloud
+            infrastructure.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Corporate Headquarters</h4>
+          <p>901, Galaxy Blue Sapphire Plaza<br>Greater Noida West<br>Uttar Pradesh 201306, India</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Regional Office</h4>
+          <p>H. No. 46, Near 40 Feet Road<br>Parahupur, Mughalsarai<br>Uttar Pradesh, India</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p> 2024 gikitek Private Limited. An Akashaja Group Company. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <div class="chat-widget" id="chatWidget">&#128172;<div class="chat-tooltip">Talk to our team</div>
+  </div>
+
+  <div class="back-to-top" id="backToTop">&#8593;</div>
+
+  <script type="module" src="/main.js"></script>
 
 </body>
 

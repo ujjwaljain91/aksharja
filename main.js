@@ -2,6 +2,7 @@ import './style.css';
 import Lenis from 'lenis';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import SplitType from 'split-type';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,45 +22,50 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
-lenis.on('scroll', ScrollTrigger.update);
-gsap.ticker.add((time) => {
-  lenis.raf(time * 1000);
-});
-gsap.ticker.lagSmoothing(0);
-
 // ----------------------------------------------------
-// 2. REVEAL ANIMATIONS (Luxoft Spec)
+// 2. ADVANCED ANIMATIONS (Luxoft Spec)
 // ----------------------------------------------------
 const initAnimations = () => {
-  // 1. Generic Scroll Reveal (Fade Up)
-  const revealItems = document.querySelectorAll('.hero-text-content > *, .section-header, .stat-item, .service-card, .industry-card, .timeline-node, .principle-item, .pillar-card, .product-content, .product-visual, .timeline-container > div, .solution-card-direct');
-
-  revealItems.forEach(item => {
-    gsap.set(item, {
+  // 1. Text Split Reveal
+  const splitHeadings = document.querySelectorAll('.split-text');
+  splitHeadings.forEach(heading => {
+    const text = new SplitType(heading, { types: 'chars,lines' });
+    
+    gsap.from(text.chars, {
+      scrollTrigger: {
+        trigger: heading,
+        start: 'top 85%',
+        once: true
+      },
+      y: 50,
       opacity: 0,
-      y: 40
+      stagger: 0.02,
+      duration: 0.8,
+      ease: 'power3.out'
     });
+  });
 
-    ScrollTrigger.create({
-      trigger: item,
-      start: 'top 85%',
-      once: true,
-      onEnter: () => {
-        gsap.to(item, {
-          opacity: 1,
-          y: 0,
-          duration: 0.5,
-          ease: 'power2.out'
-        });
+  // 2. Generic Scroll Reveal (Fade Up)
+  const reveals = document.querySelectorAll('.reveal-up');
+  reveals.forEach(el => {
+    gsap.from(el, {
+      y: 40,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 85%",
+        toggleActions: "play none none none"
       }
     });
   });
 
-  // 2. Stats Counter Animation
-  const stats = document.querySelectorAll('.stat-number');
+  // 3. Stats Counter Animation
+  const stats = document.querySelectorAll('.stat-counter');
   stats.forEach(stat => {
-    const target = parseFloat(stat.innerText.replace(/[^0-9.]/g, ''));
-    const suffix = stat.innerText.replace(/[0-9.]/g, '');
+    const target = parseFloat(stat.getAttribute('data-target'));
+    const suffix = stat.getAttribute('data-suffix') || '';
     const obj = { value: 0 };
 
     ScrollTrigger.create({
@@ -69,38 +75,33 @@ const initAnimations = () => {
       onEnter: () => {
         gsap.to(obj, {
           value: target,
-          duration: 1.2,
+          duration: 1.5,
           ease: 'power2.out',
           onUpdate: () => {
-            if (target % 1 === 0) {
-              stat.innerText = Math.floor(obj.value) + suffix;
-            } else {
-              stat.innerText = obj.value.toFixed(1) + suffix;
-            }
+            stat.innerText = Math.floor(obj.value) + suffix;
           }
         });
       }
     });
   });
 
-  // 3. Engineering Timeline Line Growth
-  const timelineLine = document.querySelector('.timeline-line');
-  if (timelineLine) {
-    gsap.set(timelineLine, { scaleX: 0, transformOrigin: 'left' });
-    gsap.to(timelineLine, {
-      scaleX: 1,
-      duration: 1.5,
-      ease: 'power3.inOut',
+  // 4. Parallax Backgrounds
+  const parallaxItems = document.querySelectorAll('.parallax-bg');
+  parallaxItems.forEach(item => {
+    gsap.to(item, {
       scrollTrigger: {
-        trigger: '.timeline-container',
-        start: 'top 80%',
-        once: true
-      }
+        trigger: item,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true
+      },
+      y: (i, target) => -target.offsetHeight * 0.2, // Adjust factor as needed
+      ease: 'none'
     });
-  }
+  });
 };
 
-window.addEventListener('DOMContentLoaded', initAnimations);
+window.addEventListener('load', initAnimations);
 
 // ----------------------------------------------------
 // 3. ACCORDIONS
@@ -204,6 +205,22 @@ const initNavigation = () => {
       mobileNavToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
     });
   }
+
+  // Mobile Dropdown Handle
+  const navItemsWithMenu = document.querySelectorAll('.nav-item');
+  navItemsWithMenu.forEach(item => {
+    const link = item.querySelector('.nav-link');
+    const menu = item.querySelector('.mega-menu');
+    if(link && menu) {
+      link.addEventListener('click', (e) => {
+        // If on mobile (or generally if toggle is visible)
+        if(window.innerWidth <= 768) {
+          e.preventDefault(); // Prevent instant navigation 
+          item.classList.toggle('open');
+        }
+      });
+    }
+  });
 
   // Back to Top Visibility
   // Scroll Progress Bar

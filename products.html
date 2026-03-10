@@ -1,199 +1,226 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gikitek | Specialized Enterprise Platforms</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | gikitek - Enterprise Platforms</title>
+  <meta name="description" content="Proprietary enterprise platforms for ERP, CRM, and Industrial Automation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-    <!-- Background Brand Text -->
-    <div class="background-brand-text">gik&#299;t&#233;k</div>
+  <!-- Background Brand Text -->
+  <div class="background-brand-text">gikīték</div>
 
-    <!-- Floating Pill Navigation -->
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container"
-            style="max-width: var(--container-max); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 100%; padding: 0 var(--space-3);">
-            <a href="/" class="logo" style="display: flex; flex-direction: column;">
-                <span class="logo-main">gik<span class="logo-accent">&#299;</span>t&#233;k</span>
-                <span class="logo-sub"
-                    style="color: var(--color-accent); font-weight: 600; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2px;">An
-                    Akashaja Group Company</span>
-            </a>
+  <!-- Glassmorphism Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <span class="logo-main">gik<span class="logo-accent">ī</span>ték</span>
+        <span class="logo-sub">An Akashaja Group Company</span>
+      </a>
 
-            <ul class="nav-links" style="display: flex; gap: var(--space-4); list-style: none;">
-                <li class="nav-item">
-                    <a href="/solutions.html" class="nav-link">Solutions</a>
-                    <div class="mega-menu">
-                        <div class="mega-menu-container">
-                            <div class="mega-col">
-                                <div class="mega-col-title">Categories</div>
-                                <ul class="mega-list">
-                                    <li class="mega-list-item"><a href="/solutions.html#erp" class="mega-link">ERP
-                                            Systems</a></li>
-                                    <li class="mega-list-item"><a href="/solutions.html#ai" class="mega-link">AI &
-                                            Automation</a></li>
-                                    <li class="mega-list-item"><a href="/solutions.html#cloud" class="mega-link">Cloud
-                                            Infrastructure</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <div class="mega-col-title">Featured</div>
-                                <div class="mega-featured-card">
-                                    <h4 style="color: var(--color-text-header);">Enterprise Integration</h4>
-                                    <p style="font-size: 14px; color: var(--color-text-body);">Connecting legacy systems
-                                        with modern cloud architecture.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="/products.html" class="nav-link active">Products</a>
-                </li>
-                <li class="nav-item"><a href="/engineering.html" class="nav-link">Engineering</a></li>
-                <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
-            </ul>
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
 
-            <button class="mobile-nav-toggle" id="mobileNavToggle">?</button>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+        <li class="nav-item">
+          <a href="/products.html" class="nav-link active">Products</a>
+          <div class="mega-menu glass-card">
+            <!-- Mega Menu Content (Simplified for inner pages or full copy) -->
+            <div class="mega-menu-container">
+              <div class="mega-col">
+                <div class="mega-col-title">Core Platforms</div>
+                <ul class="mega-list">
+                  <li class="mega-list-item"><a href="/products.html#erp" class="mega-link">Enterprise ERP</a></li>
+                  <li class="mega-list-item"><a href="/products.html#crm" class="mega-link">Next-Gen CRM</a></li>
+                  <li class="mega-list-item"><a href="/products.html#hcm" class="mega-link">HCM Systems</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Specialized Tools</div>
+                <ul class="mega-list">
+                  <li class="mega-list-item"><a href="/products.html#pos" class="mega-link">POS Software</a></li>
+                  <li class="mega-list-item"><a href="/products.html#fintech" class="mega-link">FinTech Apps</a></li>
+                  <li class="mega-list-item"><a href="/products.html#ai" class="mega-link">AI Assistant</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <div class="mega-featured-card glass-card">
+                  <h4 class="gradient-text">Featured Product</h4>
+                  <p>AI-Driven Inventory Intelligence for Global Supply Chains.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="/solutions.html" class="nav-link">Solutions</a></li>
+        <li class="nav-item"><a href="/industries.html" class="nav-link">Industries</a></li>
+        <li class="nav-item"><a href="/company.html" class="nav-link">Company</a></li>
+        <li class="nav-item"><a href="/resources.html" class="nav-link">Resources</a></li>
+      </ul>
 
-            <a href="/contact.html" class="btn-nav"
-                style="padding: 0.75rem 1.5rem; background: var(--color-accent); border-radius: var(--radius-xl); color: var(--color-white); font-weight: 600; text-decoration: none;">Talk
-                to us</a>
+      <div class="nav-actions">
+        <a href="/contact.html" class="btn-primary">Talk to an Expert</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section dot-grid">
+      <div class="container">
+        <div class="hero-text-content">
+          <p class="fluid-p reveal-up" style="max-width: 800px; margin: 0 auto; text-align: center;">Enterprise Resource
+            Planning, CRM, and bespoke operational platforms engineered for the Fortune 500.</p>
         </div>
-    </nav>
-
-    <main class="main-content">
-        <div class="hero-spacer"></div>
-        <!-- Hero Section -->
-        <section class="hero-section" style="text-align: left;">
-            <div class="container"
-                style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-3); text-align: left;">
-                <span class="hero-label"
-                    style="display: inline-block; padding: 4px 12px; background: var(--color-accent-soft); color: var(--color-accent); border-radius: 999px; font-size: 12px; font-weight: 600; text-transform: uppercase; margin-bottom: var(--space-3);">Proprietary
-                    Platforms</span>
-                <h1 class="fluid-h1" style="max-width: 20ch; margin-bottom: var(--space-3);">Specialized SaaS for
-                    Industrial Scale</h1>
-                <p class="fluid-p" style="max-width: 55ch;">Our products are hardened, modular platforms designed to
-                    address specific operational bottlenecks in manufacturing and distribution.</p>
-            </div>
-        </section>
-
-        <!-- Product 1: ERP -->
-        <section id="erp" class="section-padding"
-            style="padding: var(--space-12) 0; border-top: 1px solid var(--color-border);">
-            <div class="container"
-                style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-3); display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: center;">
-                <div class="product-visual"
-                    style="aspect-ratio: 16/10; background: rgba(148, 163, 184, 0.05); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); overflow: hidden;">
-                    <img src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?q=80&w=2070&auto=format&fit=crop"
-                        alt="ERP Dashboard" style="width:100%; height:100%; object-fit:cover; opacity: 0.8;">
-                </div>
-                <div class="product-content">
-                    <div
-                        style="font-family: var(--font-mono); font-size: 12px; color: var(--color-accent); margin-bottom: var(--space-2);">
-                        gikitek CORE</div>
-                    <h2 style="margin-bottom: var(--space-3);">Industrial ERP SaaS</h2>
-                    <p style="color: var(--color-text-body); margin-bottom: var(--space-4); line-height: 1.6;">A modular
-                        resource planning platform that synchronizes supply chain, production, and finance into a single
-                        source of truth.</p>
-                    <ul
-                        style="list-style: none; padding: 0; margin-bottom: var(--space-6); display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
-                        <li
-                            style="font-size: 14px; color: var(--color-text-muted); display: flex; align-items: center; gap: 8px;">
-                            <span style="color: var(--color-accent);">?</span> Inventory Sync
-                        </li>
-                        <li
-                            style="font-size: 14px; color: var(--color-text-muted); display: flex; align-items: center; gap: 8px;">
-                            <span style="color: var(--color-accent);">?</span> GST Compliance
-                        </li>
-                        <li
-                            style="font-size: 14px; color: var(--color-text-muted); display: flex; align-items: center; gap: 8px;">
-                            <span style="color: var(--color-accent);">?</span> Multi-Entity
-                        </li>
-                        <li
-                            style="font-size: 14px; color: var(--color-text-muted); display: flex; align-items: center; gap: 8px;">
-                            <span style="color: var(--color-accent);">?</span> API-First
-                        </li>
-                    </ul>
-                    <a href="/contact.html" class="btn-primary">Request Platform Access</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Product 2: CRM -->
-        <section id="crm" class="section-padding"
-            style="padding: var(--space-12) 0; background: var(--color-surface); border-top: 1px solid var(--color-border);">
-            <div class="container"
-                style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-3); display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: center;">
-                <div class="product-content" style="order: 1;">
-                    <div
-                        style="font-family: var(--font-mono); font-size: 12px; color: var(--color-accent); margin-bottom: var(--space-2);">
-                        gikitek SALES</div>
-                    <h2 style="margin-bottom: var(--space-3);">Enterprise CRM</h2>
-                    <p style="color: var(--color-text-body); margin-bottom: var(--space-4); line-height: 1.6;">
-                        Transforming raw leads into loyal customers with high-fidelity sales intelligence and automated
-                        pipeline governance.</p>
-                    <div
-                        style="background: var(--color-muted); padding: var(--space-4); border-radius: var(--radius-xl); border: 1px solid var(--color-border);">
-                        <div style="font-weight: 700; color: var(--color-text-header); margin-bottom: 4px;">Data
-                            Governance</div>
-                        <p style="font-size: 13px; color: var(--color-text-muted);">Built-in audit trails and role-based
-                            access for global sales teams.</p>
-                    </div>
-                </div>
-                <div class="product-visual"
-                    style="aspect-ratio: 16/10; background: rgba(148, 163, 184, 0.05); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); overflow: hidden; order: 2;">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
-                        alt="CRM Intelligence" style="width:100%; height:100%; object-fit:cover; opacity: 0.8;">
-                </div>
-            </div>
-        </section>
-
-        <!-- Integration Row -->
-        <section class="section-padding"
-            style="padding: var(--space-12) 0; text-align: center; border-bottom: 1px solid var(--color-border);">
-            <div class="container">
-                <div
-                    style="font-family: var(--font-mono); font-size: 10px; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: var(--space-4);">
-                    Native Integration Ecosystem</div>
-                <div
-                    style="display: flex; gap: var(--space-8); justify-content: center; flex-wrap: wrap; opacity: 0.5;">
-                    <span style="font-weight: 800; font-size: 1.25rem;">ORACLE</span>
-                    <span style="font-weight: 800; font-size: 1.25rem;">SAP</span>
-                    <span style="font-weight: 800; font-size: 1.25rem;">SALESFORCE</span>
-                    <span style="font-weight: 800; font-size: 1.25rem;">AWS</span>
-                    <span style="font-weight: 800; font-size: 1.25rem;">AZURE</span>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer style="background: var(--color-canvas); padding: var(--space-12) 0;">
-        <div class="container" style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-3);">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-                <div class="footer-logo">
-                    <div style="color: var(--color-white); font-weight: 800; font-size: 1.25rem;">gikitek</div>
-                    <div
-                        style="color: var(--color-accent); font-weight: 600; font-size: 10px; text-transform: uppercase;">
-                        An Akashaja Group Company</div>
-                </div>
-                <p style="color: var(--color-text-muted); font-size: 12px;">� 2024 gikitek Private Limited. All Rights
-                    Reserved.</p>
-            </div>
+        <div class="hero-visual reveal-up" style="margin-top: var(--space-8);">
+          <div class="glass-card" style="padding: 0; overflow: hidden; max-width: 500px; width: 60%; margin: 0 auto; display: flex;">
+            <img src="/assets/images/tech-nodes.png" alt="Tech Network"
+              style="width:100%; height:auto; display:block; opacity:0.8;">
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script type="module" src="/main.js"></script>
+    <!-- Product Grid -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="product-grid" style="display: grid; gap: var(--space-12);">
 
+          <!-- ERP -->
+          <div id="erp" class="product-row reveal-up"
+            style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); align-items: center;">
+            <div class="product-image glass-card" style="overflow: hidden;">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800" alt="ERP"
+                class="parallax-bg" style="width: 100%; opacity: 0.8;">
+            </div>
+            <div class="product-info">
+              <div class="section-subtitle gradient-text">gikitek CORE</div>
+              <h2>Cloud-Native Enterprise ERP</h2>
+              <p style="margin-bottom: var(--space-2);">
+                Built on decades of experience analyzing and optimizing Fortune 500 operational bottlenecks, our modular
+                ERP platform acts as the central nervous system for your global enterprise. We synchronize complex
+                supply chains, multi-jurisdictional financial operations, and human capital into a singular, highly
+                secure source of truth.
+              </p>
+              <p>
+                Unlike rigid legacy systems, gikitek CORE is architected with a decoupled, API-first approach, ensuring
+                seamless integration with your existing legacy infrastructure while future-proofing your business
+                against rapid scaling demands.
+              </p>
+              <ul class="mega-list" style="margin: var(--space-4) 0;">
+                <li class="mega-list-item">✓ Real-Time Multi-Entity Financial Consolidation</li>
+                <li class="mega-list-item">✓ AI-Driven Global Inventory Intelligence</li>
+                <li class="mega-list-item">✓ Automated cross-border Regulatory Compliance (SOC2, GDPR)</li>
+              </ul>
+              <a href="/contact.html" class="btn-primary">Request Architectural Review</a>
+            </div>
+          </div>
 
-</html>
+          <!-- CRM -->
+          <div id="crm" class="product-row reveal-up"
+            style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); align-items: center; margin-top: var(--space-12);">
+            <div class="product-info" style="order: 2;">
+              <div class="section-subtitle gradient-text">gikitek SALES</div>
+              <h2>Intelligent Enterprise CRM</h2>
+              <p style="margin-bottom: var(--space-2);">
+                A next-generation customer relationship management platform engineered specifically for complex B2B
+                sales cycles and massive B2C consumer bases. We've distilled years of sales enablement expertise into a
+                tool that proactively drives conversion.
+              </p>
+              <p>
+                Integrated with proprietary machine learning models, gikitek SALES provides predictive lead scoring,
+                automated pipeline orchestration, and rigorous enterprise governance to ensure your sales data remains
+                an impenetrable strategic asset.
+              </p>
+              <ul class="mega-list" style="margin: var(--space-4) 0;">
+                <li class="mega-list-item">✓ Predictive Lead Scoring via Machine Learning</li>
+                <li class="mega-list-item">✓ Cross-Department Workflow Orchestration</li>
+                <li class="mega-list-item">✓ Bank-Grade Data Security & Access Controls</li>
+              </ul>
+              <a href="/contact.html" class="btn-primary">Explore Platform Architecture</a>
+            </div>
+            <div class="product-image glass-card" style="overflow: hidden; order: 1;">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800" alt="CRM"
+                class="parallax-bg" style="width: 100%; opacity: 0.8;">
+            </div>
+          </div>
+
+          <!-- POS -->
+          <div id="pos" class="product-row reveal-up"
+            style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); align-items: center; margin-top: var(--space-12);">
+            <div class="product-image glass-card" style="overflow: hidden;">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800" alt="POS"
+                class="parallax-bg" style="width: 100%; opacity: 0.8;">
+            </div>
+            <div class="product-info">
+              <div class="section-subtitle gradient-text">gikitek RETAIL</div>
+              <h2>Unified Omnichannel POS</h2>
+              <p style="margin-bottom: var(--space-2);">
+                Designed for high-volume retail environments, our Point of Sale system bridges the physical and digital
+                divide. Bringing enterprise-level transaction throughput to the storefront with zero latency and offline
+                resilience.
+              </p>
+              <p>
+                Seamlessly integrated with gikitek CORE, every transaction immediately updates global inventory,
+                triggers financial reconciliation, and feeds into consumer behavior analytics in real-time.
+              </p>
+              <ul class="mega-list" style="margin: var(--space-4) 0;">
+                <li class="mega-list-item">✓ Zero-Latency Transaction Processing Engine</li>
+                <li class="mega-list-item">✓ Offline Mode Resilience with Auto-Sync</li>
+                <li class="mega-list-item">✓ Real-time ERP/CRM bi-directional integration</li>
+              </ul>
+              <a href="/contact.html" class="btn-primary">Request Specification Sheet</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <div class="logo-main">gik<span class="logo-accent">ī</span>ték</div>
+            <div class="logo-sub">An Akashaja Group Company</div>
+          </div>
+          <p>Enterprise technology systems for scalable business operations.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Location</h4>
+          <p>901, Galaxy Blue Sapphire Plaza<br>Greater Noida West, UP 201306</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 gikitek Private Limited. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <div class="chat-widget" id="chatWidget">💬</div>
+  <div class="back-to-top" id="backToTop">↑</div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>l>

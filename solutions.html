@@ -1,253 +1,331 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Solutions | gikitek Enterprise Engineering</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions | gikitek - Enterprise Engineering</title>
+  <meta name="description" content="End-to-end digital transformation and engineering services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
+  <!-- Background Brand Text -->
+  <div class="background-brand-text">gikīték</div>
 
-    <!-- Background Brand Text -->
-    <div class="background-brand-text">gik&#299;t&#233;k</div>
+  <!-- Glassmorphism Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <span class="logo-main">gik<span class="logo-accent">ī</span>ték</span>
+        <span class="logo-sub">An Akashaja Group Company</span>
+      </a>
 
-    <!-- Floating Pill Navigation -->
-    <nav class="navbar">
-        <div class="nav-container"
-            style="max-width: var(--container-max); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 100%; padding: 0 var(--space-3);">
-            <a href="/" class="logo" style="display: flex; flex-direction: column;">
-                <span class="logo-main">gik<span class="logo-accent">&#299;</span>t&#233;k</span>
-                <span class="logo-sub"
-                    style="color: var(--color-accent); font-weight: 600; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2px;">An
-                    Akashaja Group Company</span>
-            </a>
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
 
-            <ul class="nav-links" style="display: flex; gap: var(--space-4); list-style: none;">
-                <li class="nav-item"><a href="/solutions.html" class="nav-link active">Solutions</a></li>
-                <li class="nav-item"><a href="/products.html" class="nav-link">Products</a></li>
-                <li class="nav-item"><a href="/engineering.html" class="nav-link">Engineering</a></li>
-                <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
-            </ul>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/products.html" class="nav-link">Products</a></li>
+        <li class="nav-item"><a href="/solutions.html" class="nav-link active">Solutions</a></li>
+        <li class="nav-item"><a href="/industries.html" class="nav-link">Industries</a></li>
+        <li class="nav-item"><a href="/company.html" class="nav-link">Company</a></li>
+        <li class="nav-item"><a href="/resources.html" class="nav-link">Resources</a></li>
+      </ul>
 
-            <button class="mobile-nav-toggle" id="mobileNavToggle">?</button>
-
-            <a href="/contact.html" class="btn-nav"
-                style="padding: 0.75rem 1.5rem; background: var(--color-accent); border-radius: var(--radius-xl); color: var(--color-white); font-weight: 600; text-decoration: none; transition: var(--duration-fast);">Talk
-                to us</a>
-        </div>
-    </nav>
-
-    <main>
-        <div class="hero-spacer"></div>
-        <!-- Section: Hero -->
-        <section class="hero-section">
-            <div class="container">
-                <div class="section-header" style="max-width: 800px; margin: 0 auto; text-align: center;">
-                    <div class="section-subtitle">OUR CAPABILITIES</div>
-                    <h1 class="fluid-h1">The Solution Ecosystem</h1>
-                    <p class="section-description">End-to-end engineering and digital transformation services delivered
-                        with governance-grade precision.</p>
-                </div>
-
-                <div class="solutions-grid-direct">
-
-                    <!-- 01 Software Development -->
-                    <div class="solution-card-direct">
-                        <div class="sol-header">
-                            <span class="sol-num">01</span><span class="sol-icon">&#128187;</span>
-                        </div>
-                        <h3 class="sol-title">Software Development</h3>
-                        <ul class="sol-list">
-                            <li>Custom Web Applications</li>
-                            <li>Mobile App Engineering (iOS/Android)</li>
-                            <li>Desktop Platform Solutions</li>
-                            <li>Multi-tenant SaaS Products</li>
-                            <li>Enterprise ERP Systems</li>
-                            <li>Bespoke CRM Platforms</li>
-                        </ul>
-                    </div>
-
-                    <!-- 02 Web Technology -->
-                    <div class="solution-card-direct">
-                        <div class="sol-header">
-                            <span class="sol-num">02</span><span class="sol-icon">&#127760;</span>
-                        </div>
-                        <h3 class="sol-title">Web Technology</h3>
-                        <ul class="sol-list">
-                            <li>Premium Website Design</li>
-                            <li>E-commerce Solutions</li>
-                            <li>Corporate Portfolio Sites</li>
-                            <li>High-Conversion Landing Pages</li>
-                            <li>CMS Architectures (WP/Shopify)</li>
-                            <li>Interactive Web Portals</li>
-                        </ul>
-                    </div>
-
-                    <!-- 03 AI & Data -->
-                    <div class="solution-card-direct">
-                        <div class="sol-header">
-                            <span class="sol-num">03</span><span class="sol-icon">&#129504;</span>
-                        </div>
-                        <h3 class="sol-title">AI, Data & Automation</h3>
-                        <ul class="sol-list">
-                            <li>LLM & Generative AI Models</li>
-                            <li>Machine Learning Workflows</li>
-                            <li>NLP & Cognitive Chatbots</li>
-                            <li>Predictive Business Analytics</li>
-                            <li>RPA Process Automation</li>
-                            <li>Data Lake Architectures</li>
-                        </ul>
-                    </div>
-
-                    <!-- 04 Cloud & DevOps -->
-                    <div class="solution-card-direct">
-                        <div class="sol-header">
-                            <span class="sol-num">04</span><span class="sol-icon">&#9729;</span>
-                        </div>
-                        <h3 class="sol-title">Cloud & DevOps</h3>
-                        <ul class="sol-list">
-                            <li>Cloud Migration (AWS/Azure/GCP)</li>
-                            <li>High-Availability CI/CD Pipelines</li>
-                            <li>Kubernetes & Docker Orchestration</li>
-                            <li>Managed Server Operations</li>
-                            <li>Serverless Architecture Design</li>
-                        </ul>
-                    </div>
-
-                    <!-- 05 Cybersecurity -->
-                    <div class="solution-card-direct">
-                        <div class="sol-header">
-                            <span class="sol-num">05</span><span class="sol-icon">&#128737;</span>
-                        </div>
-                        <h3 class="sol-title">Cybersecurity</h3>
-                        <ul class="sol-list">
-                            <li>Vulnerability Testing (VAPT)</li>
-                            <li>Managed SOC Operations</li>
-                            <li>Enterprise Compliance (ISO/GDPR)</li>
-                            <li>Network Perimeter Security</li>
-                            <li>Identity & Access Management</li>
-                        </ul>
-                    </div>
-
-                    <!-- 06 Digital Marketing -->
-                    <div class="solution-card-direct">
-                        <div class="sol-header">
-                            <span class="sol-num">06</span><span class="sol-icon">&#128200;</span>
-                        </div>
-                        <h3 class="sol-title">Digital Marketing</h3>
-                        <ul class="sol-list">
-                            <li>Data-Driven SEO Strategies</li>
-                            <li>PPC / Performance Marketing</li>
-                            <li>B2B Lead Generation</li>
-                            <li>Content Ecosystem Strategy</li>
-                            <li>Social Media Governance</li>
-                        </ul>
-                    </div>
-
-                    <!-- 07 Graphic & Creative -->
-                    <div class="solution-card-direct">
-                        <div class="sol-header">
-                            <span class="sol-num">07</span><span class="sol-icon">&#127912;</span>
-                        </div>
-                        <h3 class="sol-title">Graphic & Creative</h3>
-                        <ul class="sol-list">
-                            <li>Enterprise Branding & Identity</li>
-                            <li>UI/UX Design Systems</li>
-                            <li>Motion Graphics & Video</li>
-                            <li>2D/3D Product Animation</li>
-                            <li>Sales Enablement Design</li>
-                        </ul>
-                    </div>
-
-                    <!-- 08 IT Support -->
-                    <div class="solution-card-direct">
-                        <div class="sol-header">
-                            <span class="sol-num">08</span><span class="sol-icon">&#9881;</span>
-                        </div>
-                        <h3 class="sol-title">IT Support & Consulting</h3>
-                        <ul class="sol-list">
-                            <li>24/7 Managed IT Support</li>
-                            <li>Strategic Tech Consulting</li>
-                            <li>Network Infrastructure Design</li>
-                            <li>Third-Party Integrations</li>
-                            <li>Legacy System Modernization</li>
-                        </ul>
-                    </div>
-
-                    <!-- 09 Mobile Excellence -->
-                    <div class="solution-card-direct">
-                        <div class="sol-header">
-                            <span class="sol-num">09</span><span class="sol-icon">&#128241;</span>
-                        </div>
-                        <h3 class="sol-title">Mobile Optimization</h3>
-                        <ul class="sol-list">
-                            <li>Progressive Web Apps (PWA)</li>
-                            <li>Mobile-First UI Extensions</li>
-                            <li>App Store Performance Tuning</li>
-                            <li>Hybrid Mobile Frameworks</li>
-                            <li>Mobile Security Hardening</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Final CTA -->
-        <section class="section-padding"
-            style="background: var(--color-surface); border-top: 1px solid var(--color-border);">
-            <div class="container" style="text-align: center;">
-                <h2 class="section-title">Ready to build the future?</h2>
-                <p class="section-description" style="margin-bottom: var(--space-4);">Talk to our architects today about
-                    your next enterprise initiative.</p>
-                <a href="/contact.html" class="btn-primary">Request Consultation</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col" style="max-width: 400px;">
-                    <div class="footer-logo">
-                        <div class="footer-logo-main">gik<span class="logo-accent">&#299;</span>t&#233;k</div>
-                        <div class="footer-logo-sub">An Akashaja Group Company</div>
-                    </div>
-                    <p style="margin-top: var(--space-2);">Enterprise technology solutions for scalable business
-                        operations. ERP, CRM, AI/ML, and cloud
-                        infrastructure.</p>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Corporate Headquarters</h4>
-                    <p>901, Galaxy Blue Sapphire Plaza<br>Greater Noida West<br>Uttar Pradesh 201306, India</p>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Regional Office</h4>
-                    <p>H. No. 46, Near 40 Feet Road<br>Parahupur, Mughalsarai<br>Uttar Pradesh, India</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>� 2024 gikitek Private Limited. An Akashaja Group Company. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Chat Widget -->
-    <div class="chat-widget" id="chatWidget">&#128172;<div class="chat-tooltip">Talk to our team</div>
+      <div class="nav-actions">
+        <a href="/contact.html" class="btn-primary">Talk to an Expert</a>
+      </div>
     </div>
+  </nav>
 
-    <script type="module" src="/main.js"></script>
-    `n
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section dot-grid">
+      <div class="container">
+        <div class="hero-text-content">
+          <!-- <span class="hero-label reveal-up">Enterprise Capabilities</span>
+          <h1 class="fluid-h1 split-text">Digital Transformation <span class="gradient-text">Engineered</span></h1> -->
+          <p class="fluid-p reveal-up">End-to-end consulting and engineering services delivered with governance-grade
+            precision.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Grid -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="solutions-grid-direct">
+
+          <!-- 01 Software Development -->
+          <div class="solution-card-direct glass-card reveal-up">
+            <div class="sol-header">
+              <span class="sol-num">01</span>
+              <span class="sol-icon">💻</span>
+            </div>
+            <h3 class="sol-title">Software Development</h3>
+            <ul class="sol-list">
+              <li>Custom Enterprise Web Apps</li>
+              <li>High-Performance Mobile Apps</li>
+              <li>Multi-tenant SaaS Platforms</li>
+              <li>Legacy Modernization</li>
+            </ul>
+            <div class="sol-hover-reveal"
+              style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800');">
+              <div class="sol-hover-overlay"></div>
+              <div class="sol-tech-stack">
+                <div class="sol-tech-title">Tech Stack</div>
+                <div class="sol-tech-tags">
+                  <span class="sol-tech-tag">React</span>
+                  <span class="sol-tech-tag">Node.js</span>
+                  <span class="sol-tech-tag">Go</span>
+                  <span class="sol-tech-tag">iOS/Android</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 AI & Data -->
+          <div class="solution-card-direct glass-card reveal-up" style="transition-delay: 0.1s;">
+            <div class="sol-header">
+              <span class="sol-num">02</span>
+              <span class="sol-icon">🧠</span>
+            </div>
+            <h3 class="sol-title">AI & Data Automation</h3>
+            <ul class="sol-list">
+              <li>Generative AI Deployment</li>
+              <li>Predictive Data Pipelines</li>
+              <li>Cognitive RPA Workflows</li>
+              <li>Enterprise Data Lakes</li>
+            </ul>
+            <div class="sol-hover-reveal"
+              style="background-image: url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800');">
+              <div class="sol-hover-overlay"></div>
+              <div class="sol-tech-stack">
+                <div class="sol-tech-title">Tech Stack</div>
+                <div class="sol-tech-tags">
+                  <span class="sol-tech-tag">Python</span>
+                  <span class="sol-tech-tag">PyTorch</span>
+                  <span class="sol-tech-tag">Snowflake</span>
+                  <span class="sol-tech-tag">UiPath</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 Cloud & DevOps -->
+          <div class="solution-card-direct glass-card reveal-up" style="transition-delay: 0.2s;">
+            <div class="sol-header">
+              <span class="sol-num">03</span>
+              <span class="sol-icon">☁️</span>
+            </div>
+            <h3 class="sol-title">Cloud & Infrastructure</h3>
+            <ul class="sol-list">
+              <li>AWS/Azure/GCP Migration</li>
+              <li>Zero-Trust Security Arch</li>
+              <li>Managed DevOps/CI-CD</li>
+              <li>Kubernetes Orchestration</li>
+            </ul>
+            <div class="sol-hover-reveal"
+              style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800');">
+              <div class="sol-hover-overlay"></div>
+              <div class="sol-tech-stack">
+                <div class="sol-tech-title">Tech Stack</div>
+                <div class="sol-tech-tags">
+                  <span class="sol-tech-tag">AWS</span>
+                  <span class="sol-tech-tag">Azure</span>
+                  <span class="sol-tech-tag">Kubernetes</span>
+                  <span class="sol-tech-tag">Terraform</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04 Cybersecurity -->
+          <div class="solution-card-direct glass-card reveal-up" style="transition-delay: 0.3s;">
+            <div class="sol-header">
+              <span class="sol-num">04</span>
+              <span class="sol-icon">🛡️</span>
+            </div>
+            <h3 class="sol-title">Cybersecurity</h3>
+            <ul class="sol-list">
+              <li>Vulnerability Assessment</li>
+              <li>Managed SOC Operations</li>
+              <li>ISO/GDPR Compliance</li>
+              <li>Perimeter Hardening</li>
+            </ul>
+            <div class="sol-hover-reveal"
+              style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800');">
+              <div class="sol-hover-overlay"></div>
+              <div class="sol-tech-stack">
+                <div class="sol-tech-title">Tech Stack</div>
+                <div class="sol-tech-tags">
+                  <span class="sol-tech-tag">CrowdStrike</span>
+                  <span class="sol-tech-tag">Splunk</span>
+                  <span class="sol-tech-tag">Palo Alto</span>
+                  <span class="sol-tech-tag">CISSP Cert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 05 Digital Marketing -->
+          <div class="solution-card-direct glass-card reveal-up">
+            <div class="sol-header">
+              <span class="sol-num">05</span>
+              <span class="sol-icon">📈</span>
+            </div>
+            <h3 class="sol-title">Growth Marketing</h3>
+            <ul class="sol-list">
+              <li>Strategic B2B SEO</li>
+              <li>Data-Driven PPC Ops</li>
+              <li>Growth Intelligence</li>
+              <li>Lead Scoring Systems</li>
+            </ul>
+            <div class="sol-hover-reveal"
+              style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800');">
+              <div class="sol-hover-overlay"></div>
+              <div class="sol-tech-stack">
+                <div class="sol-tech-title">Tech Stack</div>
+                <div class="sol-tech-tags">
+                  <span class="sol-tech-tag">HubSpot</span>
+                  <span class="sol-tech-tag">Marketo</span>
+                  <span class="sol-tech-tag">Google Ads API</span>
+                  <span class="sol-tech-tag">Salesforce</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06 Creative -->
+          <div class="solution-card-direct glass-card reveal-up" style="transition-delay: 0.1s;">
+            <div class="sol-header">
+              <span class="sol-num">06</span>
+              <span class="sol-icon">🎨</span>
+            </div>
+            <h3 class="sol-title">Design Engineering</h3>
+            <ul class="sol-list">
+              <li>Enterprise Design Systems</li>
+              <li>Interactive UX/UI Audit</li>
+              <li>2D/3D Motion Graphics</li>
+              <li>Branding Architecture</li>
+            </ul>
+            <div class="sol-hover-reveal"
+              style="background-image: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=800');">
+              <div class="sol-hover-overlay"></div>
+              <div class="sol-tech-stack">
+                <div class="sol-tech-title">Tech Stack</div>
+                <div class="sol-tech-tags">
+                  <span class="sol-tech-tag">Figma</span>
+                  <span class="sol-tech-tag">Spline 3D</span>
+                  <span class="sol-tech-tag">Storybook</span>
+                  <span class="sol-tech-tag">GSAP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 07 Consulting -->
+          <div class="solution-card-direct glass-card reveal-up" style="transition-delay: 0.2s;">
+            <div class="sol-header">
+              <span class="sol-num">07</span>
+              <span class="sol-icon">⚙️</span>
+            </div>
+            <h3 class="sol-title">Strategy & Support</h3>
+            <ul class="sol-list">
+              <li>24/7 Managed Tech Support</li>
+              <li>CTO-as-a-Service</li>
+              <li>Digital Strategy Audits</li>
+              <li>Global Expansion Planning</li>
+            </ul>
+            <div class="sol-hover-reveal"
+              style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800');">
+              <div class="sol-hover-overlay"></div>
+              <div class="sol-tech-stack">
+                <div class="sol-tech-title">Tech Stack</div>
+                <div class="sol-tech-tags">
+                  <span class="sol-tech-tag">Jira Service</span>
+                  <span class="sol-tech-tag">ServiceNow</span>
+                  <span class="sol-tech-tag">ITIL v4</span>
+                  <span class="sol-tech-tag">TOGAF</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 08 E-commerce -->
+          <div class="solution-card-direct glass-card reveal-up" style="transition-delay: 0.3s;">
+            <div class="sol-header">
+              <span class="sol-num">08</span>
+              <span class="sol-icon">🛒</span>
+            </div>
+            <h3 class="sol-title">Commerce Ecosystems</h3>
+            <ul class="sol-list">
+              <li>Headless Commerce Arch</li>
+              <li>Shopify Plus / Adobe Com</li>
+              <li>Payment Engine Integrat</li>
+              <li>Logistics API Sync</li>
+            </ul>
+            <div class="sol-hover-reveal"
+              style="background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800');">
+              <div class="sol-hover-overlay"></div>
+              <div class="sol-tech-stack">
+                <div class="sol-tech-title">Tech Stack</div>
+                <div class="sol-tech-tags">
+                  <span class="sol-tech-tag">Magento</span>
+                  <span class="sol-tech-tag">Shopify Plus</span>
+                  <span class="sol-tech-tag">Stripe API</span>
+                  <span class="sol-tech-tag">GraphQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <div class="logo-main">gik<span class="logo-accent">ī</span>ték</div>
+            <div class="logo-sub">An Akashaja Group Company</div>
+          </div>
+          <p>Enterprise technology systems for scalable business operations.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Location</h4>
+          <p>901, Galaxy Blue Sapphire Plaza<br>Greater Noida West, UP 201306</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 gikitek Private Limited. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <div class="chat-widget" id="chatWidget">💬</div>
+  <div class="back-to-top" id="backToTop">↑</div>
+
+  <script type="module" src="/main.js"></script>
 </body>
 
-</html>
+</html>l>
