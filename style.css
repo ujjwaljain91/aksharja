@@ -2259,6 +2259,11 @@ footer {
     gap: var(--space-6);
   }
 
+  /* Extra gap for values/stat cards */
+  .stats-grid {
+    gap: 1.5rem !important;
+  }
+
   /* Product Row Stacking */
   .product-row {
     grid-template-columns: 1fr !important;
