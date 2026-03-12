@@ -2293,6 +2293,8 @@ footer {
   .mobile-nav-toggle {
     display: block;
     margin-left: auto;
+    /* Aligns hamburger to the right */
+    margin-right: var(--space-2);
   }
 
   /* Force Hero CTAs to Stack */
