@@ -1910,7 +1910,8 @@ main {
   .partnership-grid,
   .product-showcase-grid {
     grid-template-columns: 1fr !important;
-    gap: var(--space-6) !important;
+    gap: var(--space-8) !important;
+    /* Increased gap for mobile readability */
   }
 
   .footer-grid {
@@ -2394,6 +2395,17 @@ footer {
 
   .hero-text-content {
     margin-top: 2rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .hero-actions .btn-primary {
+    margin-left: 0 !important;
+    /* Override inline margin from desktop */
+    width: 100%;
   }
 }
 
