@@ -173,8 +173,8 @@
   /* 5% fill */
   -webkit-text-stroke: 2px rgba(255, 255, 255, 0.3);
   /* 30% stroke opacity as requested */
-  z-index: 900;
-  /* Above content */
+  z-index: 0;
+  /* Beneath content */
   white-space: nowrap;
   pointer-events: none;
   user-select: none;
@@ -2323,6 +2323,7 @@ footer {
     border-bottom: 1px solid var(--color-border-light);
     max-height: calc(100vh - var(--navbar-height));
     overflow-y: auto;
+    z-index: 9999;
   }
 
   .nav-links.active {
