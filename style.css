@@ -2342,6 +2342,8 @@ footer {
     padding: 1rem 0;
     font-size: 1.125rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 10;
+    pointer-events: auto;
   }
 
   .mega-menu {
