@@ -2292,9 +2292,10 @@ footer {
   /* Navigation adjustments */
   .mobile-nav-toggle {
     display: block;
-    margin-left: auto;
-    /* Aligns hamburger to the right */
-    margin-right: var(--space-2);
+    position: absolute;
+    right: var(--space-4);
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   /* Force Hero CTAs to Stack */
