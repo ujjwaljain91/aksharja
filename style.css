@@ -2327,6 +2327,8 @@ footer {
 
   .nav-links.active {
     display: flex;
+    z-index: 9999;
+    /* Ensure menu overlaps any page content */
   }
 
   .nav-item {
